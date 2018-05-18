@@ -1,0 +1,65 @@
+
+main {
+	background-color: aliceblue;
+	width: 960px;
+	margin: 20px auto;
+	
+}
+
+#header {
+	text-align: center;
+	padding: 10px;
+	color: indianred;
+	position: relative;
+}
+
+#header h1, #header p {
+	position: absolute;
+}
+#header h1 {
+	top: -10px;
+}
+
+#header p {
+	font-style: italic;
+	top: 40px;
+}
+
+.container {
+	background-color: indianred;
+	padding: 40px 20px 0px 20px; 
+	height: 680px
+}
+
+.navHover {
+	color: darkgreen;
+}
+
+nav {
+	position: relative;
+	top: 620px;
+}
+
+nav li a {
+	color: blanchedalmond;
+}
+
+#slideshow {
+	margin: 0 auto;
+	position: relative;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+#header {
+	height: 100px;
+	background-color: blanchedalmond;
+	
+}
+

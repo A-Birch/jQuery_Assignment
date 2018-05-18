@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A jQuery Tabbed Menu Bar</title>
+  <link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabLinks" ).tabs({
+      event: "mouseover"
+    });
+  } );
+  </script>
+ 
+</head>
+<body>
+ 	<div id="tabLinks">
+		<ul>
+			<li><a href="#tabs-1">Learning Outcomes</a></li>
+			<li><a href="#tabs-2">Learning Modules</a></li>
+			<li><a href="#tabs-3">CONTACT</a></li>
+		</ul>
+		<div id="tabs-1">
+			<h3>Computer and Information Sciences Program</h3>
+			<p>	Students who complete the Computer and Information Sciences Program will gain facility with:<br>
+			Technological Awareness: Students will be able to evaluate and apply appropriate technology to support specific business activities and business solutions.
+			Critical Thinking: Students will be able to analyze specific business or information technology problems or situations and identify possible solutions, including predictive analysis, synthesis of information, resourcefulness, and troubleshooting.
+			Communication: Students will be able to choose the appropriate mode of communication for a specific situation and then communicate ideas, concepts, and solutions through effective written and oral communication.</p>
+			<h3>Web Development Program</h3>
+			<p>Students who complete the Web Development Program will be able to:<br>
+			Evaluate and apply appropriate technology to support specific business activities and business solutions.
+			Analyze specific business problems or situations and identify possible solutions, including predictive analysis, synthesis of information, resourcefulness, and troubleshooting.
+			Choose the appropriate mode of communication for a specific situation and then communicate ideas, concepts, and solutions through effective written and oral communication.</p>
+		</div>
+		<div id="tabs-2">
+			<h3>DESCRIPTION</h3>
+			<p>Prepares students for employment in the rapidly expanding field of Computer and Information Sciences and offers the skills required to function effectively in various occupations and professions requiring the use of computers. Required courses focus upon the use and functioning of the computer and relate the general study of the computer with studies of specific languages, enabling the student to combine computer hardware and software to process data into information. Upon completion of this curriculum, the student should have the capability to apply computer technology to diverse business and professional environments and be qualified for employment as an entry-level programmer in the computer and information sciences industry or transfer to 4 year institution.</p>
+		</div>
+		<div id="tabs-3">
+			<h3>CONTACT</h3>
+			<address>
+				San Diego Mesa College<br>
+				7250 Mesa College Drive<br>
+				San Diego, CA 92111-4998<br>
+				619.388.2600
+			</address>
+		</div>
+	</div>
+
+</body>
+</html>

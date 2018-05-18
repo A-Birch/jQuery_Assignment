@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A jQuery Tabbed Menu Bar</title>
+	<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.css">
+	<link rel="stylesheet" href="/js/jquery-ui-1.12.1.custom/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+		$( function() {
+			var icons = {
+				header: "ui-icon-circle-plus",
+				activeHeader: "ui-icon-circle-minus"
+			};
+			$( "#accordion" ).accordion({
+				icons: icons,
+				heightStyle: "content"
+			});
+			$( "#toggle" ).button().toggle(function() {
+				$( "#accordion" ).accordion( "option", "icons", false );
+			}, function() {
+				$( "#accordion" ).accordion( "option", "icons", icons );
+			});
+
+			$(".ui-accordion-header, .ui-accordion-header.ui-state-active").css("font-weight", "bold");
+			$(".ui-accordion-header").css("border-radius", "10px");
+
+			$(".ui-state-active").css("border-radius", "10px 0");
+				
+		} ); 
+	</script>
+	
+</head>
+<body>
+	<div id="accordion">
+		<h3>Why Pima?</h3>
+		<div>
+			<p>There are many factors to consider when choosing a school, including your educational and professional goals, your work experience, and your budget.<br>
+			Pima is dedicated to providing high-quality education that is meaningful, accessible, and affordable.</p>
+			<div class="clear"></div>
+		</div>
+		<h3>Apply</h3>
+		<div>
+			<h3>Who Can Apply</h3>
+			<p>At Pima we believe that a high quality, affordable education enables people to pursue their dreams, expand their understanding, and create their own future. Everyone is welcome to apply to Pima.</p> 
+
+			<h3>How to Apply</h3>
+			<p>Use our <a href="https://www.pima.edu/new-students/apply/how-to-apply.html">Admissions and Registration Checklist to apply</a> to Pima - we’ve made it quick and easy to apply online.</p>
+		</div>
+		<h3>Take Assessments</h3>
+		<div>
+			<h3>Placement Processes</h3>
+			<p>The college utilizes two processes to place students:  Multiple Measures and Accuplacer Placement Tests.</p>
+
+			<p>If you have graduated from high school or earned your GED in the last three years, the college will utilize Multiple Measures for your initial placement.  If not, the college provides opportunities to practice and prepare for the Accuplacer Placement Tests.</p>
+		</div>
+		<h3>New Student Orientation</h3>
+		<div>
+			<p>New Student Orientation is an essential learning experience to start your first year off right.  In orientation you will learn what classes to take, how to register, and the resources available to help you succeed.  Additionally, you'll receive personalized advising at orientation.</p>
+
+			<p>First-time college students are required to participate in orientation to help ensure their academic success.  Transfer and returning students are highly encouraged to participate in orientation to learn about Pima processes, services and resources.</p>
+		</div>
+		<h3>Advising</h3>
+		<div>
+			<p>After you have explored our academic programs, you can reach out to an academic advisor for help selecting the courses you need to earn your degree.</p>
+
+			<p>Pima's Counseling Faculty lead new student orientation sessions. During the orientation, you will learn what classes to take, how to register for them, and the resources to help you accomplish your goals.<br><br>
+			»  Learn more about the full range of <a href="https://www.pima.edu/current-students/advising/index.html">academic advising services</a>.<br><br>
+			»  Read some tips to help you <a href="https://www.pima.edu/new-students/new-student-orientation/preparing-advising.html">prepare for advising</a>.</p>
+		</div>
+		<h3>Register for Classes</h3>
+		<div>
+			<h3>How to Register</h3>
+			<p>Review class schedules to find out what classes are being offered in the upcoming semester. Speak with an academic advisor if you have questions about choosing classes.</p>
+
+			<p>If you attend new student orientation you will receive advising and learn how to register.  First-time college students are required to attend orientation before registering for classes to help ensure their success.</p>
+
+			<p>Students then register online through MyPima, where you can manage your student account, explore class options, see your grades, and make payments. In addition to online registration, there are other ways to register.</p>
+		</div>
+		<h3>Student ID Card</h3>
+		<div>
+			<p>You will need a current PCC Student Identification (ID) Card to access many of our student services, such as using student labs or selling books back to the bookstore. If you are a current student, you must have your Student ID Card validated each semester.</p>
+
+			<h3>New students</h3>
+			<p>To get a Student ID Card</p>
+			<ol>
+			<li>Take a current, government issued photo ID to a Campus location listed below.</li>
+			<li>A College Employee will issue the Student ID Card.</li>
+			</ol>
+			<h3>Current students</h3>
+
+			<p>To have your Student ID Card validated for the current semester</p>
+			<ol>
+			<li>Take your current Student ID Card to a Campus location listed below.</li>
+			<li>A College Employee will provide you with a semester specific sticker that is affixed to your Student ID Card.</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>
